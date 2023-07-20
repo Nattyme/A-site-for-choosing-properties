@@ -9,10 +9,10 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 1170px;
-    margin: 0 auto;
 }
 
 
@@ -33,13 +33,42 @@ body {
 
 /* Card */
 .card {
+    position: relative;
+    width: 270px;
     background-color: #fff;
 }
 
-
-.card__image {
+.card__badges {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    display: flex;
 }
 
+.card__badges > * + * {
+    margin-left: 10px;
+}
+
+.card__badge {
+    display: inline-block;
+    padding: 0 10px;
+    height: 22px;
+    border-radius: 4px;
+    background: #FFCF26;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}
+
+.card__badge--class {
+    background: #FFCF26;
+}
+
+
+.card__badge--credit {
+    background: #11BE75;
+}
 
 .card__content {
     padding: 15px 15px 20px;
@@ -69,6 +98,18 @@ margin-bottom: 10px;
 font-size: 14px;
 line-height: 1.14;
 color: #000000;
+}
+
+.card__metro::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: baseline;
+    width: 16px;
+    height: 11px;
+    background-image: url('./../icons/metro.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
 }
 
 
