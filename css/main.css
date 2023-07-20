@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    display: block;
+}
+
 .container {
     margin: 0 auto;
     padding-top: 60px;
@@ -57,7 +61,7 @@ body {
     border-radius: 4px;
     background: #FFCF26;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 23px;
     color: #000;
 }
 
@@ -71,7 +75,7 @@ body {
 }
 
 .card__content {
-    padding: 15px 15px 20px;
+    padding: 16px 15px 20px;
 }
 
 
