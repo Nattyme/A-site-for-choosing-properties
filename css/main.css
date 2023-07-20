@@ -37,6 +37,16 @@ img {
     width: 270px;
 }
 
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-holder > .card-link {
+    margin-bottom: 30px;
+}
+
 /* Card */
 a.card-link {
     display: inline-block;
