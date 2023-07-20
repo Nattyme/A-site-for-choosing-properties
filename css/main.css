@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -36,6 +38,17 @@ img {
 }
 
 /* Card */
+a.card-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+a.card-link:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+}
+
 .card {
     position: relative;
     width: 270px;
