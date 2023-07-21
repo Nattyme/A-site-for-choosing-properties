@@ -370,8 +370,14 @@ color: #777777;
 .checkbox__real:checked + .checkbox__fake::before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
     width: 18px;
     height: 18px;
+    background-image: url("./../img/icons/check.svg");
+    background-size: initial;
+    background-position: center;
+    transform: translate(-50%, -50%);
 
 }
 
