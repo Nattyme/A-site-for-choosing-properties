@@ -334,10 +334,32 @@ color: #777777;
 /* checkbox */
 
 .checkbox {
+    display: block;
+    cursor: pointer;
 }
+
+.checkbox + .checkbox {
+    margin-top: 15px;
+}
+
+
 .checkbox__real {
+    /*width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    appearance: none; */
 }
 .checkbox__fake {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    vertical-align: bottom;
 }
 .checkbox__title {
 }
