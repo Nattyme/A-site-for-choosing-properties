@@ -175,3 +175,83 @@ color: #777777;
     margin-right: 10px;
     vertical-align: bottom;
 }
+
+/* Sidebar */
+.widget {
+
+}
+
+.widget__title {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight:bold;
+    line-height: 1.16;
+    color: #000;
+}
+
+.widget__title::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*background-color: red;*/
+    background-image: url("./../img/icons/chevron-up.svg");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+}
+
+/* location buttons group */
+.location {}
+
+
+.location__row {
+    display: flex;
+}
+
+.location__row:first-child {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    border: 1px solid #D6D6D6;
+}
+
+.location__row:last-child {
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    border: 1px solid #D6D6D6;
+    border-top: none;
+}
+
+
+.location__btn {
+    font-family: inherit;
+    flex-grow: 1;
+    padding: 0 15px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    color: #3C3C3C;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.location__btn:hover {
+    background-color: #fff0bb;
+}
+
+.location__btn--active {
+    background-color: #FFCF26;
+}
+
+.location__btn--active:hover {
+    background-color: #e0b000;
+}
