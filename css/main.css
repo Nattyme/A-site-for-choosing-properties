@@ -344,11 +344,11 @@ color: #777777;
 
 
 .checkbox__real {
-    /*width: 1px;
+    width: 1px;
     height: 1px;
     opacity: 0;
     position: absolute;
-    appearance: none; */
+    appearance: none; 
 }
 .checkbox__fake {
     position: relative;
