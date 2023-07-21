@@ -351,6 +351,7 @@ color: #777777;
     appearance: none; */
 }
 .checkbox__fake {
+    position: relative;
     margin-right: 10px;
     position: relative;
     display: inline-block;
@@ -361,8 +362,23 @@ color: #777777;
     border-radius: 2px;
     vertical-align: bottom;
 }
+
+.checkbox__real:checked + .checkbox__fake {
+    background-color: #FFE074;
+}
+
+.checkbox__real:checked + .checkbox__fake::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+}
+
 .checkbox__title {
 }
+
+
 
 
 
