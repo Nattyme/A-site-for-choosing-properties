@@ -381,11 +381,16 @@ color: #777777;
 
 }
 
+
 .checkbox__title {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.18;
     color: #3C3C3C;
+}
+
+.checkbox__real:checked ~ .checkbox__title {
+    font-weight: 500;
 }
 
 /* hidden elements widget */
