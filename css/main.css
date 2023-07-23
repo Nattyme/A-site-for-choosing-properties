@@ -382,6 +382,27 @@ color: #777777;
 }
 
 .checkbox__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: #3C3C3C;
+}
+
+.link_show_more {
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    border-style: none;
+    line-height: normal;
+    color: #4290C9;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.link_show_more:hover {
+    color: #316d98;
 }
 
 
