@@ -522,6 +522,13 @@ color: #777777;
 
 
 .form-btn--submit {
+    background-color: #FFCF26;
+    border: none;
+    color: #000;
+}
+
+.form-btn--submit:hover {
+    background-color: #ffe173;
 }
 
 
