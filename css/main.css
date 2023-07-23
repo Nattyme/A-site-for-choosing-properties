@@ -427,6 +427,62 @@ color: #777777;
 
 /* widget toggle*/
 
+.toggle {
+    cursor: pointer;
+}
+
+
+.toggle__real {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+
+.toggle__fake {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 37px;
+    height: 20px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+
+.toggle__fake::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    background-color: #3c3c3c;
+    transition: all 0.2s ease-in;
+}
+
+.toggle__real:checked + .toggle__fake {
+    background-color: #FFE074;
+}
+
+.toggle__real:checked + .toggle__fake::before {
+    left: 19px;
+}
+
+
+.toggle__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: #3C3C3C;
+}
+
+.toggle__real:checked ~ .toggle__title {
+    font-weight: 500;
+}
 
 
 
