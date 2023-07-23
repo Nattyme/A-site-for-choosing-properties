@@ -388,22 +388,41 @@ color: #777777;
     color: #3C3C3C;
 }
 
-.link_show_more {
+/* hidden elements widget */
+
+.widget__hidden {
+    display: none;;
+}
+
+
+.widget__show__hidden {
+    display: inline-block;
+    padding: 0;
     margin-top: 15px;
+    background-color: transparent;
+    
+
+    font-family: inherit;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    border-style: none;
-    line-height: normal;
+    font-weight: normal;
+    border: none;
+    line-height: 1.19;
     color: #4290C9;
-    background-color: transparent;
+   
     cursor: pointer;
+    transition: color 0.2s ease-in;
 
 }
 
 .link_show_more:hover {
     color: #316d98;
+    text-decoration: underline;
 }
+
+
+
+
 
 
 
