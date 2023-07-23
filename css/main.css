@@ -505,6 +505,13 @@ color: #777777;
     transition: background-color 0.2s ease-in;
 }
 
+.form-btn img {
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
 .form-btn:hover {
     background-color: #e7e7e7;
 }
