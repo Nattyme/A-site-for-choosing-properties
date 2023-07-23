@@ -415,7 +415,7 @@ color: #777777;
 
 }
 
-.link_show_more:hover {
+.widget__show__hidden:hover {
     color: #316d98;
     text-decoration: underline;
 }
