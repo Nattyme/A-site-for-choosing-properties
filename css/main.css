@@ -594,7 +594,8 @@ color: #777777;
 /* Button toggle-sidebar */
 .toggle-sidebar {
     display: block;
-    position: absolute;
+    position: fixed;
+    z-index: 9;
     right: 15px;
     top: 8px;
     width: 45px;
