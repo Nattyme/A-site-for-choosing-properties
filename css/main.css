@@ -94,6 +94,10 @@ img {
     margin-bottom: 30px;
 }
 
+.cards-link--hidden {
+    display: none !important;
+}
+
 /* Card */
 a.card-link {
     display: inline-block;
