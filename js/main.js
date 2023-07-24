@@ -32,3 +32,15 @@ widgets.forEach(function (widget) {
        }
     })
 })
+
+/* location button "Любая"*/
+const checkBoxAny = document.querySelector('#location-05');
+const allLocationCheckboxes = document.querySelectorAll('.location__checkbox');
+checkBoxAny.addEventListener('change', function(){
+    if(checkBoxAny.checked){
+        allLocationCheckboxes.forEach(function(item){
+            item.checked = false;
+        });
+        checkBoxAny.checked = true;
+    } 
+});
