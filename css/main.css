@@ -248,6 +248,7 @@ color: #777777;
     font-weight: bold;
     line-height: 1.16;
     color: #000;
+    cursor: pointer;
 }
 
 .widget__title::after {
@@ -262,6 +263,16 @@ color: #777777;
     background-repeat: no-repeat;
     background-size: initial;
     background-position: center;
+}
+
+.widget__title--active::after {
+    transform: rotate(180deg);
+}
+
+.widget__body {}
+
+.widget__body--hidden {
+    display: none;
 }
 
 /* location buttons group */
