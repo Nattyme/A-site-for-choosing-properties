@@ -640,13 +640,13 @@ color: #777777;
     background-color: transparent;
 }
 
-.menu-icon .menu-icon-active::before {
+.menu-icon.menu-icon-active::before {
     transform: rotate(45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.menu-icon .menu-icon:active::after {
+.menu-icon.menu-icon-active::after {
     transform: rotate(-45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
