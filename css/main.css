@@ -150,6 +150,9 @@ color: #777777;
 
 
 .btn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80px;
 
@@ -171,33 +174,38 @@ color: #777777;
 }
 
 .btn-more img {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-right: 10px;
-    vertical-align: bottom;
+    /*vertical-align: bottom;*/
 }
 
 /* Sidebar */
 .widget + .widget {
-    margin-top: 30px;
+    margin-top: 33px;
 
 }
 
+.widget__top__30 {
+    margin-top: 30px !important;
+}
+
+
 .widget__title {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     line-height: 1.16;
     color: #000;
 }
 
 .widget__title::after {
     content: "";
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: -1px;
     /*background-color: red;*/
     background-image: url("./../img/icons/chevron-up.svg");
     background-repeat: no-repeat;
@@ -231,7 +239,7 @@ color: #777777;
     font-family: inherit;
     flex-grow: 1;
     padding: 0 15px;
-    height: 50px;
+    height: 48px;
     background-color: transparent;
     border: none;
 
@@ -287,7 +295,7 @@ color: #777777;
 }
 
 .radio__fake {
-    margin-right: 10px;
+    margin-right: 7px;
     position: relative;
     display: inline-block;
     width: 20px;
@@ -352,7 +360,7 @@ color: #777777;
 }
 .checkbox__fake {
     position: relative;
-    margin-right: 10px;
+    margin-right: 7px;
     position: relative;
     display: inline-block;
     width: 20px;
@@ -427,6 +435,7 @@ color: #777777;
 
 /* widget toggle*/
 
+
 .toggle {
     cursor: pointer;
 }
@@ -444,7 +453,7 @@ color: #777777;
 .toggle__fake {
     display: inline-block;
     position: relative;
-    margin-right: 10px;
+    margin-right: 7px;
     width: 37px;
     height: 20px;
     background-color: #c4c4c4;
@@ -487,6 +496,9 @@ color: #777777;
 /* Form buttons */
 
 .form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     height: 50px;
     width: 100%;
@@ -506,10 +518,10 @@ color: #777777;
 }
 
 .form-btn img {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-right: 6px;
-    vertical-align: middle;
-    margin-top: -2px;
+   /* vertical-align: middle;*/
+    /*margin-top: -2px;*/
 }
 
 .form-btn:hover {
