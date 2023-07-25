@@ -16,7 +16,7 @@ const hiddenCards = document.querySelectorAll('.cards-link--hidden');
 btnShowMoreCards.addEventListener('click', function () {
     hiddenCards.forEach(function(cards) {
         cards.classList.remove('cards-link--hidden');
-    })
+    });
 
 } );
 
@@ -30,8 +30,8 @@ widgets.forEach(function (widget) {
        e.target.classList.toggle('widget__title--active');
        e.target.nextElementSibling.classList.toggle('widget__body--hidden');
        }
-    })
-})
+    });
+});
 
 /* location button "Любая"*/
 const checkBoxAny = document.querySelector('#location-05');
@@ -48,22 +48,40 @@ checkBoxAny.addEventListener('change', function(){
 });
 
 // Reset button "Любая" after choosing another parameter
-topLocationCheckboxes.forEach(function(item){
-    item.addEventListener('change', function(){
+
+
+topLocationCheckboxes.forEach(function(item) {
+    item.addEventListener('change', function() {
         if(item.checked = true){
          checkBoxAny.checked = false;}
-    })
+    });
 });
 
 
 
 /* Show three more additional options with checkboxes at filter */ 
 
-const showMoreOptions = document.querySelector('.widget__show__hidden');
+const showMoreOptions = document.querySelector('.widget__btn-show__hidden');
 const hiddenCheckBoxes = document.querySelectorAll('.checkbox--hidden');
-showMoreOptions.onclick = function () {
-    hiddenCheckBoxes.forEach(function(item){
-        item.classList.remove('checkbox--hidden');
-    })
-    showMoreOptions.remove();
+
+showMoreOptions.onclick = function (e) {
+    e.preventDefault();
+    //if blocks  have benn hidden than we show
+    
+if (showMoreOptions.dataset.options == 'hidden') {
+    hiddenCheckBoxes.forEach(function (item) {
+        item.style.display = 'block';
+    });
+    showMoreOptions.dataset.options = 'visible';
+    showMoreOptions.innerText = 'Свернуть доп опции';
 }
+
+    //if blocks were visable than to hide
+    else if (showMoreOptions.dataset.options == 'visible') {
+    hiddenCheckBoxes.forEach(function (item) {
+        item.style.display = 'none';
+    });
+    showMoreOptions.dataset.options = 'hidden';
+    showMoreOptions.innerText = 'Показать ещё';
+}
+};
