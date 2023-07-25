@@ -54,3 +54,16 @@ topLocationCheckboxes.forEach(function(item){
          checkBoxAny.checked = false;}
     })
 });
+
+
+
+/* Show three more additional options with checkboxes at filter */ 
+
+const showMoreOptions = document.querySelector('.widget__show__hidden');
+const hiddenCheckBoxes = document.querySelectorAll('.checkbox--hidden');
+showMoreOptions.onclick = function () {
+    hiddenCheckBoxes.forEach(function(item){
+        item.classList.remove('checkbox--hidden');
+    })
+    showMoreOptions.remove();
+}
