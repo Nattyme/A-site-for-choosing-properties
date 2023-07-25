@@ -3,13 +3,13 @@ const sidebarToggleBtn = document.querySelector('.menu-icon-wrapper');
 const menuIcon = document.querySelector('.menu-icon');
 const sidebar = document.querySelector('.sidebar');
 
-
+//Click to button to show/ to hide filter at mobile devices. Change of icon
 sidebarToggleBtn.onclick = function () {
     menuIcon.classList.toggle('menu-icon-active');
     sidebar.classList.toggle('sidebar--mobile-active');
 };
 
-/* show  three more cards */
+/* Click to button and show three hidden cards */
 const btnShowMoreCards = document.querySelector('.btn-more');
 const hiddenCards = document.querySelectorAll('.cards-link--hidden');
 
@@ -20,8 +20,8 @@ btnShowMoreCards.addEventListener('click', function () {
 
 } );
 
-/* to show/ to hide widget content */
 
+/* Find all widget at the page. Listen to click inside widget. If click at title than to show/ to hide widget content */
 const widgets = document.querySelectorAll('.widget');
 
 widgets.forEach(function (widget) {
@@ -35,12 +35,22 @@ widgets.forEach(function (widget) {
 
 /* location button "Любая"*/
 const checkBoxAny = document.querySelector('#location-05');
-const allLocationCheckboxes = document.querySelectorAll('.location__checkbox');
+const topLocationCheckboxes = document.querySelectorAll('[data-location-param]');
+
+//Choose  button "Любая" - reset other parameters
 checkBoxAny.addEventListener('change', function(){
     if(checkBoxAny.checked){
-        allLocationCheckboxes.forEach(function(item){
+        topLocationCheckboxes.forEach(function(item){
             item.checked = false;
         });
         checkBoxAny.checked = true;
     } 
+});
+
+// Reset button "Любая" after choosing another parameter
+topLocationCheckboxes.forEach(function(item){
+    item.addEventListener('change', function(){
+        if(item.checked = true){
+         checkBoxAny.checked = false;}
+    })
 });
